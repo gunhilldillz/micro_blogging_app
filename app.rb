@@ -7,7 +7,7 @@ configure(:development) {
 	set :database, "sqlite3:///mba.sqlite3"
 }
 
-set :database, 'sqlite3:///mba.sqlite3'  #add database file
+#set :database, 'sqlite3:///mba.sqlite3'  #add database file
 set :sessions, true
 set :environment, :developmennt
 use Rack::Flash, :sweep => true
