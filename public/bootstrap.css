@@ -1446,7 +1446,8 @@ th {
 .table-condensed > thead > tr > td,
 .table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
-  padding: 5px;
+  padding: 15px;
+  text-align:auto;
 }
 .table-bordered {
   border: 1px solid #ddd;
@@ -4365,8 +4366,9 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 .jumbotron {
+  width: 950px;
   padding: 30px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   color: inherit;
   background-color: #eee;
 }
@@ -5783,3 +5785,4 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+

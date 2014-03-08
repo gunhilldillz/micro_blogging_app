@@ -4,11 +4,32 @@
 <head>
 <title> MICRO BLOGGING WEB APP </title>
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+<link class="cssdeck" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.min.css">
+
 </head>
 <body class="container">
+<div class="jumbotron">
+
+<% if flash[:notice] %>
+<div class="text-center">
+     <span class="label label-success">
+        <b><%= flash[:notice] %></b>
+      </span>
+    <% end %>
+    <% if flash[:error] %>
+      <span class="label label-danger">
+       <b> <%= flash[:error] %> </b>
+      </span>
+      </div>
+ <% end %>
+ 
+
+<img class="center-block img-responsive" src="jrs_blog.svg" width="600" >
 
 <%= yield %>
 
+</div>
 </body>
 
 </html>
